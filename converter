@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+int main() {
+
+double weight;
+int x;
+
+printf(" Please enter your current weight on Earth:");
+scanf("%lf" , &weight);
+
+
+printf("\n Please enter the P# of the planet you are visiting.\n\n");
+printf("P1. Mercury\n");
+printf("P2. Venus\n");
+printf("P3. Mars\n");
+printf("P4. Jupiter\n");
+printf("P5. Saturn\n");
+printf("P6. Uranus\n");
+printf("P7. Neptune\n\n");
+
+scanf("%d" , &x);
+
+if (x == 1) {
+    weight = weight * 0.38;
+  } else if (x == 2) {
+    weight = weight * 0.91;
+  } else if (x == 3) {
+    weight = weight * 0.38;
+  } else if (x == 4) {
+    weight = weight * 2.34;
+  } else if (x == 5) {
+    weight = weight * 1.06;
+  } else if (x == 6) {
+    weight = weight * 0.92;
+  } else if (x == 7) {
+    weight = weight * 1.19;
+  }
+  printf("\nYour weight would be: %lf\n", weight);
+}
